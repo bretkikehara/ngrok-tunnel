@@ -1,0 +1,23 @@
+{
+  "name": "@bretkikehara/ngrok-tunnel",
+  "version": "1.0.1",
+  "description": "Ngrok client wrapper",
+  "main": "dist/ngrok.js",
+  "repository": "git@github.com:bretkikehara/ngrok-tunnel.git",
+  "author": "Bret Ikehara <bret.k.ikehara@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "postinstall": "./install.sh",
+    "test": "mocha --timeout 15000 test/ngrok.spec.js"
+  },
+  "devDependencies": {
+    "@types/request": "^2.47.0",
+    "@types/node": "^9.6.6",
+    "mocha": "^5.1.1",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}

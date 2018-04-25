@@ -1,0 +1,9 @@
+log: stdout
+log_format: logfmt
+tunnels:
+  svr:
+    addr: 8080
+    proto: http
+  pxy:
+    addr: 8081
+    proto: http
